@@ -1,0 +1,32 @@
+h1{
+    color: brown;
+    text-align: center;
+}
+
+button{
+    color: black;
+    background-color: cadetblue;
+    font-size: large;
+    text-align: center;
+ 
+
+}
+.html{
+    align-items: center;
+    background-color: bisque;
+    align-content: center;
+    text-align: center;
+}
+
+.content{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: beige;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+
+}

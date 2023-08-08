@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <!-- Start Table -->
+ <h2 style="text-align: center;">Student List </h2><hr>
+<table border="1" align="center">
+ <div class="row">
+    <div class="col-sm-10 col-md-6 mx-auto mt-4">
+
+        <div class="table">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        
+                        <th class="bg-primary text-white">NAME</th>
+                        <th class="bg-primary text-white">Email</th>
+                        <th class="bg-primary text-white">Mark</th>
+                        <th class="bg-primary text-white">Faill/Pass</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of studentList">
+                        
+                        <td>{{item.name}}</td>
+                        <td>{{item.email}}</td>
+
+                        <td [ngClass]="getMarkColor(item.mark)">{{item.mark}}</td>
+                    
+                        <td>
+                        <span *ngIf= "item.mark >=50" class="badge-pass">Pass</span>
+                        <span *ngIf= "item.mark <50" class="badge-fail">Fail</span>
+                       </td>
+                       
+                    </tr>
+                </tbody>
+               
+            </table>
+
+        </div>
+    </div>
+    
+</div>
+<!-- End Table -->

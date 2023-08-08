@@ -1,0 +1,26 @@
+
+
+  <div class="content">
+    <h1 class="header"> Student Home Page</h1>
+    <div class="bg-image hover-overlay ripple">
+      <img src="https://mdbootstrap.com/img/new/fluid/city/055.webp" class="img-fluid" />
+      <a href="#!">
+        <div class="mask" style="background-color: rgba(57, 192, 237, 0.2);"></div>
+      </a>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<h2>{{details}}</h2>
+<p> this is home page of student list and using angular to do it.</p>
+  
+     <input type="text" (input)="onInputChange($event)"  placeholder="Enter Student Name" >
+  <div>{{inputvalue}}</div>
+
+<br>
+<br>
+<button routerLink="/student">go to student mark</button>
+
+
+  </div>
+
+
+
